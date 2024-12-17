@@ -9,6 +9,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
             return;
         }
         //SUCCESS
-        window.location.href = "profile.html";
+        window.location.href = "new.html";
     });//end click
 }); //end loaded
