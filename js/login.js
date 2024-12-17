@@ -4,12 +4,11 @@ document.addEventListener("DOMContentLoaded", ()=>{
             username.value,
             password.value
         );
-        debugger;
-        if(!result || !result.hasOwnProperty("statusCode") || result.statusCode != 200){
+        if (!result || !result.hasOwnProperty("statusCode") || result.statusCode != 200){
             output.innerText = "Login Failed";
             return;
         }
         //SUCCESS
-        window.location.href = "messages.html";
+        window.location.href = "profile.html";
     });//end click
 }); //end loaded
