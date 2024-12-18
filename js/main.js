@@ -99,3 +99,20 @@ async function sendText(text){
     const object = await response.json();
     return object;
 }
+
+// Like a post
+async function likePost(postId) {
+    await fetch(`${BASE_URL}/api/likes`, {
+        method: "POST",
+        headers: headersWithAuth(),
+        body: JSON.stringify({ postId })
+    });
+}
+
+// Unlike a post
+async function unlikePost(postId) {
+    await fetch(`${BASE_URL}/api/likes/${postId}`, {
+        method: "DELETE",
+        headers: headersWithAuth()
+    });
+}

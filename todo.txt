@@ -56,5 +56,12 @@ Optional bonus extra credit
 - edit user profile (bio)
 - bootsrap icons peppered throughout.
 
+UPDATED REQUIREMENTS
+>Create a like
+>Remove a like
+>View Profile (username, bio)
+>Update Profile (PUT/api/user) (bio, password, fullName) TextArea tag recommended for bio
+>Remember to use separate New Message/ Post not on the Profile
+
 
 
