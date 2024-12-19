@@ -21,7 +21,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link text-dark fw-medium" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
@@ -45,22 +45,72 @@
             </div>
         </div>
     </nav>
-    <div class="hero">
 
-    </div>
-    <div class="container mt-5">
-        <!-- Welcome Section -->
-        <section class="welcome-section">
-            <h1 class="display-4">Welcome to Blush & Banter</h1>
+    <!-- Hero Section -->
+    <div class="hero text-center py-5" style="background-color: #fcecef;">
+        <div class="container">
+            <h1 class="display-3 text-pink">Blush & Banter</h1>
             <p class="lead mt-3">
-                Your cozy corner for thoughts, musings, and conversations that matter. Join the community and share your voice today!
+                A cozy space to share your thoughts, connect with others, and make your voice heard.
             </p>
-            <div class="mt-4">
-                <a href="signup.html" class="btn btn-primary btn-lg me-2">Get Started</a>
-                <a href="login.html" class="btn btn-outline-secondary btn-lg">Login</a>
+            <a href="signup.html" class="btn btn-lg btn-pink mt-3">Join the Community</a>
+        </div>
+    </div>
+
+    <!-- Recent Posts Section -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Recent Posts</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./images/post1.jpg" class="card-img-top" alt="Post 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Post Title 1</h5>
+                        <p class="card-text">A brief description of the first post. It's engaging and informative!</p>
+                        <a href="#" class="btn btn-outline-pink">Read More</a>
+                    </div>
+                </div>
             </div>
-        </section>
-    
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./images/post2.jpg" class="card-img-top" alt="Post 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Post Title 2</h5>
+                        <p class="card-text">Discover what makes this post stand out among the rest.</p>
+                        <a href="#" class="btn btn-outline-pink">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./images/post3.jpg" class="card-img-top" alt="Post 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Post Title 3</h5>
+                        <p class="card-text">An inspiring or informative third post. Click to learn more!</p>
+                        <a href="#" class="btn btn-outline-pink">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter Section -->
+    <div class="newsletter py-5 mt-5 text-center" style="background-color: #f8f3f9;">
+        <div class="container">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p class="lead">Get the latest updates and posts delivered right to your inbox.</p>
+            <form class="d-flex justify-content-center mt-3">
+                <input type="email" class="form-control w-50 me-2" placeholder="Enter your email">
+                <button type="submit" class="btn btn-pink">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 mt-5" style="background-color: #e2d4e0;">
+        <p>&copy; 2024 Blush & Banter. All rights reserved.</p>
+        <a href="#contact" class="text-dark">Contact Us</a>
+    </footer>
 </body>
 </html>
 <!DOCTYPE html>
