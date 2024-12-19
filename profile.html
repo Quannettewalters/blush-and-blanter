@@ -3,11 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Profile</title>
+    <link rel="stylesheet" href="./css/main.css">
+
     <script src="./js/main.js"></script>
     <script src="./js/profile.js"></script>
+
 </head>
 <body>
-    
+    <header>
+        <h1>Edit User Profile - <span id="username">?</span></h1>
+    </header>
+    <main>
+        <label for="fullName">
+            <span>Full Name:</span>
+            <input type="text" id="fullName">
+        </label>
+        <label for="bioText">
+            <span>Biography:</span>
+            <textarea id="bioText"></textarea>
+        </label>
+        <label for="passwordInput">
+            <span>Password:</span>
+            <input type="password" id="passwordInput">
+        </label>
+        <button id="saveUserProfile">Save User Profile</button>
+    </main>
 </body>
 </html>

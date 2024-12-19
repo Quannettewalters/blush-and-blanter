@@ -3,18 +3,6 @@ const BASE_URL = "http://microbloglite.us-east-2.elasticbeanstalk.com";
 const NO_AUTH_HEADERS = { 'accept': 'application/json', 'Content-Type': 'application/json' };
 // ONLY 2 - INSECURE TOKEN FREE ACTIONS
 
-//create user - sign up
-/*
-curl -X 'POST' \
-  'http://microbloglite.us-east-2.elasticbeanstalk.com/api/users' \
-  -H 'accept: application/json' \
-  -H 'Content-Type: application/json' \
-  -d '{
-  "username": "string",
-  "fullName": "string",
-  "password": "string"
-}'
-*/
 async function signUp(username, fullName, password) {
     const payload = JSON.stringify(
         { "username": username, "fullName": fullName, "password": password }
@@ -35,18 +23,6 @@ async function signUp(username, fullName, password) {
     return object;
 }
 
-
-//login and store username and token received
-/*
-curl -X 'POST' \
-  'http://microbloglite.us-east-2.elasticbeanstalk.com/auth/login' \
-  -H 'accept: application/json' \
-  -H 'Content-Type: application/json' \
-  -d '{
-  "username": "string",
-  "password": "string"
-}'
-*/
 async function login(username, password) {
     const payload = JSON.stringify({ "username": username, "password": password });
     const response = await fetch(BASE_URL + "/auth/login", {
@@ -100,19 +76,42 @@ async function sendText(text){
     return object;
 }
 
-// Like a post
-async function likePost(postId) {
-    await fetch(`${BASE_URL}/api/likes`, {
-        method: "POST",
+async function sendLike(postId){
+    const response = await fetch(
+        BASE_URL + "/api/likes", { // endpoint for likes
+        method: "POST", //CREATE
         headers: headersWithAuth(),
-        body: JSON.stringify({ postId })
+        body: `{"postId":"${postId}"}` //make json string by hand instead of stringify
     });
+    const object = await response.json();
+    return object;
+}
+async function deleteLike(likeId){
+    const response = await fetch(
+        BASE_URL + "/api/likes/" + likeId, { // endpoint for likes
+        method: "DELETE", //REMOVE
+        headers: headersWithAuth(),
+    });
+    const object = await response.json();
+    return object;
+}
+async function getProfile() {
+    const response = await fetch(
+        BASE_URL + "/api/users/" + localStorage.username, {
+        method: "GET",
+        headers: headersWithAuth(),
+    });
+    const object = await response.json();
+    return object;
 }
 
-// Unlike a post
-async function unlikePost(postId) {
-    await fetch(`${BASE_URL}/api/likes/${postId}`, {
-        method: "DELETE",
-        headers: headersWithAuth()
+async function saveProfile(payload){
+    const response = await fetch(
+        BASE_URL + "/api/users/" + localStorage.username, { // endpoint for messages/posts
+        method: "PUT", //UPDATE
+        headers: headersWithAuth(),
+        body: JSON.stringify(payload)
     });
+    const object = await response.json();
+    return object;
 }
