@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #fdf6f8;
+    margin: 0;
+    color: #333;
+    padding-bottom: 50px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    color: #e18c9d;
+}
+
+a, button {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #d07b8c;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #f8f3f9;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+}
+
+.nav-link {
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #e18c9d;
+}
+
+.btn-pink {
+    background-color: #e18c9d;
+    border: none;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-pink:hover {
+    background-color: #d07b8c;
+}
+
+/* Main Content */
+main {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Message List */
+.message {
+    background: #f8f3f9;
+    border: 1px solid #e2d4e0;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.message hr {
+    border: none;
+    border-top: 1px solid #e2d4e0;
+    margin: 15px 0;
+}
+
+.message button {
+    padding: 8px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #e18c9d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+}
+
+.message button:hover {
+    background-color: #d07b8c;
+    transform: scale(1.05);
+}
+
+.message span {
+    font-weight: bold;
+    color: #555;
+}
+
+/* Animations */
+.message {
+    animation: fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
