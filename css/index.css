@@ -23,37 +23,6 @@ a:hover {
     color: #d07b8c;
 }
 
-/* Navbar */
-.navbar {
-    background-color: #f8f3f9;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-brand {
-    font-size: 1.8rem;
-}
-
-.nav-link {
-    color: #333;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-    color: #e18c9d;
-}
-
-.btn-pink {
-    background-color: #e18c9d;
-    border: none;
-    color: white;
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
-
-.btn-pink:hover {
-    background-color: #d07b8c;
-}
 
 /* Hero Section */
 .hero {
