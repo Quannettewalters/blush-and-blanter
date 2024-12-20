@@ -23,3 +23,19 @@ To build a global network of women who:
 - Empower and uplift one another.
 - Break barriers and challenge stereotypes.
 - Inspire change and make a difference.
+
+![alt text](<img/Screenshot 2024-12-20 at 2.39.49 PM.png>)
+![alt text](<img/Screenshot 2024-12-20 at 2.39.53 PM.png>)
+![alt text](<img/Screenshot 2024-12-20 at 2.39.57 PM.png>)
+![alt text](<img/Screenshot 2024-12-20 at 2.40.01 PM.png>)
+![alt text](<img/Screenshot 2024-12-20 at 2.40.04 PM.png>)
+![alt text](<img/Screenshot 2024-12-20 at 2.40.29 PM.png>)
+![alt text](<img/Screenshot 2024-12-20 at 2.40.33 PM.png>)
+![alt text](<img/Screenshot 2024-12-20 at 2.40.39 PM.png>)
+![alt text](<img/Screenshot 2024-12-20 at 2.40.45 PM.png>)
+![alt text](<img/Screenshot 2024-12-20 at 2.40.49 PM.png>)
+![alt text](<img/Screenshot 2024-12-20 at 2.41.00 PM.png>)
+
+
+
+
