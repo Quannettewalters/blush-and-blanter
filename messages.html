@@ -43,7 +43,17 @@
                 <a href="profile.html" class="btn btn-secondary me-2">Update Profile</a>
                 <a href="logout.html" class="btn btn-danger">Logout</a>
             </div>
-
+            <div>
+                <select id="filter-select">
+                    <option value="none">Select Filter</option>
+                    <option value="date">Filter by Date</option>
+                    <option value="relevance">Filter by Most Likes</option>
+                </select>
+    
+                <!-- Date Picker for Filtering by Date -->
+                <input type="date" id="date-filter" style="display: none;">
+            </div>
+    
             <!-- Messages Section -->
             <div id="output"></div>
         </div>

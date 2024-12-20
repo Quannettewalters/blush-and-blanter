@@ -56,8 +56,7 @@ async function getMessageList() {
     const OFFSET_PAGE = 0;
     const queryString = `?limit=${LIMIT_PER_PAGE}&offset=${OFFSET_PAGE}`;
 
-    const response = await fetch(
-        BASE_URL + "/api/posts" + queryString, {
+    const response = await fetch(BASE_URL + "/api/posts" + queryString, {
         method: "GET",
         headers: headersWithAuth(),
     });
