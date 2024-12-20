@@ -1,44 +1,39 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Blush & Banter - Home</title>
     <script src="./js/main.js"></script>
     <script src="./js/index.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/main.css">
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f8f3f9; border-bottom: 2px solid #e2d4e0;">
+
+<body style="font-family: 'Roboto', sans-serif; color: #333;">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #f8f3f9; border-bottom: 2px solid #e2d4e0;">
         <div class="container">
             <a class="navbar-brand text-pink fw-bold" href="index.html" style="font-family: 'Playfair Display', serif; font-size: 1.8rem;">
                 Blush & Banter
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-dark fw-medium" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark fw-medium" href="signup.html">Sign-Up</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark fw-medium" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark fw-medium" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark fw-medium" href="#contact">Contact</a></li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark fw-medium" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark fw-medium" href="signup.html">Sign-Up</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark fw-medium" href="login.html">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark fw-medium" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark fw-medium" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-pink rounded-pill text-white px-3" href="login.html" style="background-color: #e18c9d; border: none;">
+                        <a class="btn text-white rounded-pill px-3" href="login.html" style="background-color: #e18c9d;">
                             Write a Post
                         </a>
                     </li>
@@ -48,70 +43,73 @@
     </nav>
 
     <!-- Hero Section -->
-    <div class="hero text-center py-5" style="background-color: #fcecef;">
+    <header class="py-5 text-center" style="background: linear-gradient(135deg, #f8dfe4, #fbeaf0);">
         <div class="container">
-            <h1 class="display-3 text-pink">Blush & Banter</h1>
-            <p class="lead mt-3">
-                A cozy space to share your thoughts, connect with others, and make your voice heard.
-            </p>
-            <a href="signup.html" class="btn btn-lg btn-pink mt-3">Join the Community</a>
+            <h1 class="display-4 fw-bold" style="font-family: 'Playfair Display', serif;">Blush & Banter</h1>
+            <p class="lead text-muted">A forum where women empower, connect, and inspire each other.</p>
+            <a href="signup.html" class="btn text-white px-4 py-2 rounded-pill" style="background-color: #e18c9d;">Join Us Today</a>
         </div>
-    </div>
+    </header>
 
-    <!-- Recent Posts Section -->
-    <div class="container mt-5">
-        <h2 class="text-center mb-4">Recent Posts</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="./images/post1.jpg" class="card-img-top" alt="Post 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Post Title 1</h5>
-                        <p class="card-text">A brief description of the first post. It's engaging and informative!</p>
-                        <a href="#" class="btn btn-outline-pink">Read More</a>
+    <!-- Featured Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-bold" style="font-family: 'Playfair Display', serif;">Featured Posts</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="./img/typewriter-5519042_1280.jpg" class="card-img-top" alt="Post 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Breaking Barriers</h5>
+                            <p class="card-text text-muted">Discover how women are shattering stereotypes and changing the world.</p>
+                            <a href="#" class="btn btn-link text-pink fw-bold">Read More</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="./images/post2.jpg" class="card-img-top" alt="Post 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Post Title 2</h5>
-                        <p class="card-text">Discover what makes this post stand out among the rest.</p>
-                        <a href="#" class="btn btn-outline-pink">Read More</a>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="./img/friendship-day-3104635_1280.jpg" class="card-img-top" alt="Post 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Empowering Connections</h5>
+                            <p class="card-text text-muted">Stories of women building supportive and meaningful networks.</p>
+                            <a href="#" class="btn btn-link text-pink fw-bold">Read More</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="./images/post3.jpg" class="card-img-top" alt="Post 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Post Title 3</h5>
-                        <p class="card-text">An inspiring or informative third post. Click to learn more!</p>
-                        <a href="#" class="btn btn-outline-pink">Read More</a>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="./img/executive-3461933_1280.jpg" class="card-img-top" alt="Post 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Leadership Spotlight</h5>
+                            <p class="card-text text-muted">Celebrating women leaders making a difference in their fields.</p>
+                            <a href="#" class="btn btn-link text-pink fw-bold">Read More</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Newsletter Section -->
-    <div class="newsletter py-5 mt-5 text-center" style="background-color: #f8f3f9;">
+    <div class="py-5 text-center" style="background-color: #f8f3f9;">
         <div class="container">
-            <h2>Subscribe to Our Newsletter</h2>
-            <p class="lead">Get the latest updates and posts delivered right to your inbox.</p>
-            <form class="d-flex justify-content-center mt-3">
+            <h2 class="fw-bold" style="font-family: 'Playfair Display', serif;">Subscribe to Our Newsletter</h2>
+            <p class="lead text-muted">Get the latest updates and posts delivered right to your inbox.</p>
+            <form class="d-flex justify-content-center">
                 <input type="email" class="form-control w-50 me-2" placeholder="Enter your email">
-                <button type="submit" class="btn btn-pink">Subscribe</button>
+                <button type="submit" class="btn text-white" style="background-color: #e18c9d;">Subscribe</button>
             </form>
         </div>
     </div>
 
     <!-- Footer -->
-    <footer class="text-center py-4 mt-5" style="background-color: #e2d4e0;">
-        <p>&copy; 2024 Blush & Banter. All rights reserved.</p>
+    <footer class="py-4 text-center" style="background-color: #e2d4e0; color: #333;">
+        <p class="mb-0">&copy; 2024 Blush & Banter. All rights reserved.</p>
         <a href="#contact" class="text-dark">Contact Us</a>
     </footer>
+
 </body>
+</html>
+
 </html>
 <!DOCTYPE html>

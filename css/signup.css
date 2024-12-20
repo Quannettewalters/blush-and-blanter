@@ -1,0 +1,46 @@
+/* General Reset */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fafafa;
+    color: #333;
+}
+
+/* Text Colors */
+.text-pink {
+    color: #e18c9d;
+}
+
+/* Form Styling */
+.signup-form {
+    border-radius: 10px;
+    background-color: #f8f3f9;
+}
+
+.signup-form label {
+    font-weight: 500;
+    color: #555;
+}
+
+.signup-form input {
+    border: 1px solid #e2d4e0;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.signup-form input:focus {
+    border-color: #e18c9d;
+    box-shadow: 0px 0px 5px rgba(225, 140, 157, 0.5);
+    outline: none;
+}
+
+/* Button Styling */
+.btn-pink {
+    background-color: #e18c9d;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-pink:hover {
+    background-color: #d07a8b;
+}

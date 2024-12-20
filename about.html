@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <script src="./js/main.js"></script>
+    <title>About Us</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/aboutus.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/index.css">
 </head>
+
 <body>
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f8f3f9; border-bottom: 2px solid #e2d4e0;">
         <div class="container">
             <a class="navbar-brand text-pink fw-bold" href="index.html" style="font-family: 'Playfair Display', serif; font-size: 1.8rem;">
@@ -27,16 +32,16 @@
                         <a class="nav-link text-dark fw-medium" href="signup.html">Sign-Up</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark fw-medium" href="login.html">Login</a>
+                        <a class="nav-link text-dark fw-medium" href="messages.html">Messages</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link text-dark fw-medium" href="about.html">About</a>
+                        <a class="nav-link text-dark fw-medium" href="aboutus.html">About Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-dark fw-medium" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-pink rounded-pill text-white px-3" href="#write-post" style="background-color: #e18c9d; border: none;">
+                        <a class="btn btn-pink rounded-pill text-white px-3" href="login.html" style="background-color: #e18c9d; border: none;">
                             Write a Post
                         </a>
                     </li>
@@ -44,3 +49,50 @@
             </div>
         </div>
     </nav>
+
+   <!-- Main Content -->
+   <main class="container mt-5">
+    <h1 class="display-5 text-center text-pink mb-4">About Us</h1>
+
+    <section class="about-us-section">
+        <h2 class="text-center text-dark mb-4">Empowering Women, Elevating Voices</h2>
+        <p class="lead text-center">
+            At Blush & Banter, we believe in the power of women's voices. We are dedicated to providing a platform where women can freely express themselves, share their stories, and inspire each other. Through creativity and open dialogue, we aim to uplift, support, and empower women from all walks of life.
+        </p>
+
+        <div class="row text-center mb-5">
+            <div class="col-md-4">
+                <h3 class="text-pink">Our Mission</h3>
+                <p>
+                    Our mission is to foster an inclusive and supportive community where women are encouraged to share their ideas, pursue their passions, and celebrate their accomplishments. We believe in creating a space where every woman can thrive, express herself, and be heard.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h3 class="text-pink">Our Values</h3>
+                <p>
+                    At Blush & Banter, we embrace the values of equality, respect, and collaboration. We stand for women’s rights, self-expression, and personal growth. We are committed to promoting diversity and ensuring that every woman has the opportunity to be heard and celebrated.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h3 class="text-pink">Our Vision</h3>
+                <p>
+                    Our vision is to build a global network of women who empower and uplift one another. We strive to break barriers and challenge stereotypes, creating a world where women’s voices are valued and their ideas shape the future. We are committed to inspiring change and making a difference.
+                </p>
+            </div>
+        </div>
+
+        <h4 class="text-center text-dark">Join the Movement</h4>
+        <p class="text-center">
+            Blush & Banter is more than just a platform—it's a movement for women everywhere. A movement that celebrates creativity, fosters meaningful connections, and challenges the status quo. We invite you to be part of this empowering community and to share your voice with the world.
+        </p>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4 mt-5">
+        <p class="text-dark mb-0">© 2024 Blush & Banter | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>

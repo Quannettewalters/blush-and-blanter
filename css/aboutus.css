@@ -1,0 +1,58 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff5f8;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #f8f3f9;
+    border-bottom: 2px solid #e2d4e0;
+}
+
+.nav-link {
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #e18c9d;
+}
+
+.navbar-brand {
+    color: #e18c9d;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* About Us Section */
+.about-us-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.about-us-section h2 {
+    font-family: 'Playfair Display', serif;
+    color: #e18c9d;
+}
+
+.about-us-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Section Titles */
+h3.text-pink {
+    color: #e18c9d;
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f3f9;
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+}

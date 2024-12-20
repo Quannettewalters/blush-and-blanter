@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #fff5f8;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #e18c9d;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #f8f3f9;
+    border-bottom: 2px solid #e2d4e0;
+}
+
+.nav-link {
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #e18c9d;
+}
+
+.navbar-brand {
+    color: #e18c9d;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.btn-pink {
+    background-color: #e18c9d;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-pink:hover {
+    background-color: #c06b79;
+}
+
+/* Header */
+header {
+    background-color: #fff5f8;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Action Buttons */
+.btn {
+    font-weight: 500;
+    padding: 10px 20px;
+}
+
+.btn-danger, .btn-secondary, .btn-pink {
+    border-radius: 25px;
+}
+
+.btn-secondary:hover {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+/* Main Content */
+.new-message-form {
+    background-color: #f8f3f9;
+    padding: 30px;
+    border: 2px solid #e2d4e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.new-message-form label {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    color: #333;
+}
+
+.new-message-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #e2d4e0;
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: none;
+}
+
+.new-message-form textarea:focus {
+    outline: none;
+    border-color: #e18c9d;
+}
+
+.new-message-form button {
+    display: block;
+    margin: 20px auto 0;
+    background-color: #e18c9d;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.new-message-form button:hover {
+    background-color: #c06b79;
+}
+
+/* Footer */
+footer {
+    background-color: #e2d4e0;
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer a:hover {
+    color: #e18c9d;
+    text-decoration: underline;
+}

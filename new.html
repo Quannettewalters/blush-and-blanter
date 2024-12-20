@@ -1,31 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Message</title>
-    <link rel="stylesheet" href="./css/new.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/new.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="./js/main.js"></script>
     <script src="./js/new.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f8f3f9; border-bottom: 2px solid #e2d4e0;">
         <div class="container">
             <a class="navbar-brand text-pink fw-bold" style="font-family: 'Playfair Display', serif; font-size: 1.8rem;">
                 Blush & Banter
             </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
     </nav>
-    <div class="d-flex justify-content-center mb-4">
-        <a href="messages.html" class="btn btn-primary me-2">View Messages</a>
-        <a href="profile.html" class="btn btn-secondary me-2">Update Profile</a>
-        <a href="logout.html" class="btn btn-danger">Logout</a>
-    </div>
-    <input id="textInput"><button id="sendTextButton">Send Text</button>
 
-    
+    <!-- Page Header -->
+    <header class="text-center py-5">
+        <h1 class="display-5 text-pink" style="font-family: 'Playfair Display', serif;">New Message</h1>
+    </header>
+
+    <!-- Action Buttons -->
+    <div class="d-flex justify-content-center mb-4">
+        <a href="messages.html" class="btn btn-pink rounded-pill px-4 me-2 text-white" style="background-color: #e18c9d;">View Messages</a>
+        <a href="profile.html" class="btn btn-secondary rounded-pill px-4 me-2">Update Profile</a>
+        <button class="btn btn-danger">Logout</button>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="new-message-form mx-auto p-4" style="max-width: 600px; background-color: #f8f3f9; border: 2px solid #e2d4e0; border-radius: 10px;">
+            <label for="textInput" class="form-label fw-medium" style="font-family: 'Playfair Display', serif;">Type your message</label>
+            <textarea id="textInput" class="form-control mb-3" rows="5" placeholder="Write your message here..." style="border: 2px solid #e2d4e0;"></textarea>
+            <button id="sendTextButton" type="submit" class="btn btn-pink text-white rounded-pill px-4" style="background-color: #e18c9d;">Send Message</button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 mt-5" style="background-color: #e2d4e0;">
+        <p class="mb-0">&copy; 2024 Blush & Banter. All rights reserved.</p>
+        <a href="#contact" class="text-dark">Contact Us</a>
+    </footer>
 </body>
+
 </html>

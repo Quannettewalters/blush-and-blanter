@@ -1,190 +1,189 @@
-/* General Styles */
-body {
-    font-family: 'Playfair Display', serif;
-    background-color: #fdf6f8;
+/* General Reset */
+body, h1, h2, h3, h4, p, a, button {
     margin: 0;
-    color: #333;
+    padding: 0;
+    box-sizing: border-box;
 }
-h1, h2, h3, h4, h5, h6 {
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #f8f3f9;
+    border-bottom: 2px solid #e2d4e0;
+}
+
+.navbar-brand {
     font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #040304 !important;
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
     color: #e18c9d;
 }
 
-p, a, button {
-    font-family: 'Roboto', sans-serif;
+.btn-pink {
+    background-color: #e18c9d;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
 }
 
-a {
+.btn-pink:hover {
+    background-color: #d07a8b;
+}
+
+/* Hero Section */
+header {
+    background: linear-gradient(135deg, #f8dfe4, #fbeaf0);
+    color: #333;
+    text-align: center;
+    padding: 50px 15px;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+header .btn {
+    background-color: #e18c9d;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+header .btn:hover {
+    background-color: #d07a8b;
+}
+
+/* Featured Section */
+section {
+    padding: 60px 15px;
+}
+
+section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #e18c9d;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.btn-link {
+    color: #e18c9d;
+    font-weight: 600;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-a:hover {
-    color: #d07b8c;
-}
-
-
-/* Hero Section */
-.hero {
-    background: linear-gradient(120deg, #fcecef, #f8f3f9);
-    padding: 100px 0;
-    color: #333;
-    text-align: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.hero h1 {
-    font-size: 3.5rem;
-    font-weight: bold;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-top: 15px;
-}
-
-.hero a {
-    margin-top: 20px;
-    padding: 10px 25px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    border-radius: 50px;
-}
-
-/* Recent Posts Section */
-.card {
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
-}
-
-.card-img-top {
-    border-radius: 10px 10px 0 0;
-}
-
-.card-title {
-    font-size: 1.2rem;
-    color: #e18c9d;
-}
-
-.card-text {
-    font-size: 0.95rem;
-    color: #555;
-}
-
-.btn-outline-pink {
-    border: 2px solid #e18c9d;
-    color: #e18c9d;
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
-
-.btn-outline-pink:hover {
-    background-color: #e18c9d;
-    color: white;
+.btn-link:hover {
+    color: #d07a8b;
 }
 
 /* Newsletter Section */
 .newsletter {
     background-color: #f8f3f9;
-    border-top: 2px solid #e2d4e0;
-    border-bottom: 2px solid #e2d4e0;
-    padding: 50px 20px;
+    text-align: center;
+    padding: 40px 15px;
 }
 
 .newsletter h2 {
-    font-size: 2rem;
-    font-weight: bold;
+    font-family: 'Playfair Display', serif;
     color: #e18c9d;
+    margin-bottom: 20px;
 }
 
 .newsletter p {
     font-size: 1rem;
-    margin: 15px 0 25px;
     color: #555;
 }
 
-.newsletter input {
+.newsletter .form-control {
+    border: 1px solid #e2d4e0;
+    border-radius: 30px;
     padding: 10px 15px;
-    border: 2px solid #e18c9d;
-    border-radius: 30px;
-    width: 50%;
-    max-width: 400px;
-    transition: border-color 0.3s ease;
 }
 
-.newsletter input:focus {
-    border-color: #d07b8c;
-    outline: none;
-}
-
-.newsletter button {
-    padding: 10px 25px;
+.newsletter .btn {
     background-color: #e18c9d;
-    color: white;
-    border: none;
+    color: #fff;
+    padding: 10px 20px;
     border-radius: 30px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.newsletter button:hover {
-    background-color: #d07b8c;
+.newsletter .btn:hover {
+    background-color: #d07a8b;
 }
 
 /* Footer */
 footer {
     background-color: #e2d4e0;
-    padding: 20px 0;
-    color: #555;
-    font-size: 0.95rem;
+    color: #333;
+    padding: 20px 15px;
     text-align: center;
 }
 
 footer a {
     color: #e18c9d;
-    font-weight: bold;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
 footer a:hover {
-    text-decoration: underline;
-}
-
-/* Animations */
-.hero h1, .hero p, .hero a {
-    animation: fadeIn 1.5s ease;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.card {
-    animation: fadeUp 1.5s ease;
-}
-
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    color: #d07a8b;
 }

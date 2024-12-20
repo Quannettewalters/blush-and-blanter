@@ -1,0 +1,79 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+
+h1, h2 {
+    color: #ff69b4; /* Soft Pink */
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.text-pink {
+    color: #ff69b4; /* Soft Pink */
+}
+
+.profile-form {
+    background-color: #ffffff;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.profile-form label {
+    font-weight: bold;
+}
+
+.profile-form .form-control {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0.8rem;
+}
+
+.profile-form .form-control:focus {
+    border-color: #ff69b4;
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.3);
+}
+
+
+/* Button Groups */
+.d-flex {
+    margin-bottom: 2rem;
+}
+
+.d-flex a {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.d-flex a.btn-primary {
+    background-color: #007bff;
+}
+
+.d-flex a.btn-secondary {
+    background-color: #6c757d;
+}
+
+.d-flex a.btn-danger {
+    background-color: #dc3545;
+}
+
+.d-flex a:hover {
+    opacity: 0.8;
+}
