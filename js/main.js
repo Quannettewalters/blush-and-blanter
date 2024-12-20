@@ -114,3 +114,13 @@ async function saveProfile(payload){
     const object = await response.json();
     return object;
 }
+
+async function deleteMessage(postId){
+    const response = await fetch(
+        BASE_URL + "/api/posts/" + postId, {
+        method: "DELETE",
+        headers: headersWithAuth(),
+    });
+    const object = await response.json();
+    return object;
+}

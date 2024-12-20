@@ -1,36 +1,63 @@
-function getMessage(m) {
-  const e = document.createElement("div");
-  e.setAttribute("class", "message");
-  e.dataset.post_id = m._id;
-  e.dataset.createdAt = m.createdAt; // Add dataset for filtering by date
-  e.dataset.likes = m.likes.length; // Add dataset for filtering by likes
-  e.innerHTML = `
-      <hr>
-      FROM:  ${m.username}<br>    
-      WHEN:  ${m.createdAt.split("T")[0]}<br> <!-- Format date -->
-      TEXT:  ${m.text}<br>
-      LIKES: ${m.likes.length}
-  `;
+function getMessage(m) {  
+  const e = document.createElement("div");  
+  e.setAttribute("class", "message");  
+  e.dataset.post_id = m._id;  
+  e.dataset.createdAt = m.createdAt; // Add dataset for filtering by date  
+  e.dataset.likes = m.likes.length; // Add dataset for filtering by likes  
+  const messageDate = new Date(m.createdAt);
 
-  // Add the like button again for each message
-  const b = document.createElement("button");
-  b.addEventListener("click", async () => {
-      const like = m.likes.find(like => like.username === localStorage.username);
-      if (like !== undefined) {
-          await deleteLike(like._id);
-          window.location.href = 'messages.html'; // Refresh page
-      } else {
-          await sendLike(m._id);
-          window.location.href = 'messages.html'; // Refresh page
-      }
-  });
+    // Format the date and time
+    const formattedDate = messageDate.toLocaleDateString(); // e.g., "12/20/2024"
+    const formattedTime = messageDate.toLocaleTimeString(); // e.g., "3:45:30 PM"
+
+  e.innerHTML = `  
+
   
-  const like = m.likes.find(like => like.username === localStorage.username);
-  b.innerText = like !== undefined ? "UnLike" : "Like";
-  e.appendChild(b); // Append like button to message element
-
-  return e;
+    <hr>  
+    FROM:  ${m.username}<br>    
+    WHEN:  ${formattedDate} ${formattedTime}<br> <!-- Show date and time -->
+    TEXT:  ${m.text}<br>  
+    LIKES: ${m.likes.length}  
+  `;  
+  
+  // Add the like button again for each message  
+  const b = document.createElement("button");  
+  b.addEventListener("click", async () => {  
+    const like = m.likes.find(like => like.username === localStorage.username);  
+    if (like !== undefined) {  
+       await deleteLike(like._id);  
+       window.location.href = 'messages.html'; // Refresh page  
+    } else {  
+       await sendLike(m._id);  
+       window.location.href = 'messages.html'; // Refresh page  
+    }  
+  });  
+   
+  const like = m.likes.find(like => like.username === localStorage.username);  
+  b.innerText = like !== undefined ? "UnLike" : "Like";  
+  e.appendChild(b); // Append like button to message element  
+  
+  // Add the delete button  
+if (m.username === localStorage.username) {  
+  const deleteButton = document.createElement("button");  
+  deleteButton.className = "delete-btn";  
+  deleteButton.innerText = "Delete";  
+  deleteButton.addEventListener("click", async () => {  
+   try {  
+    const response = await deleteMessage(m._id);  
+    console.log(response);  
+    // Remove the message from the UI  
+    e.remove();  
+   } catch (error) {  
+    console.error(error);  
+   }  
+  });  
+  e.appendChild(deleteButton); // Append delete button to message element  
 }
+
+  return e;  
+}
+
 
 // Show all messages (reset)
 function showAllMessages(messages) {
@@ -99,3 +126,4 @@ document.addEventListener("DOMContentLoaded", async () => {
       }
   });
 });
+

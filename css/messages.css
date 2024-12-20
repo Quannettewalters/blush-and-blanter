@@ -1,4 +1,4 @@
-/* General Styles */
+General Styles
 body {
     font-family: 'Playfair Display', serif;
     background-color: #fdf6f8;
@@ -84,20 +84,24 @@ main {
     margin: 15px 0;
 }
 
-.message button {
-    padding: 8px 15px;
-    font-size: 1rem;
-    font-weight: bold;
-    color: white;
-    background-color: #e18c9d;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    position: absolute;
-    bottom: 15px;
-    right: 20px;
-}
+.message button {  
+    padding: 8px 15px;  
+    font-size: 1rem;  
+    font-weight: bold;  
+    color: white;  
+    background-color: #e18c9d;  
+    border: none;  
+    border-radius: 5px;  
+    cursor: pointer;  
+    transition: background-color 0.3s ease, transform 0.2s ease;  
+    position: absolute;  
+    bottom: 15px;  
+    right: 20px;  
+ }  
+   
+ .message .delete-btn {  
+    right: 120px;  
+ }
 
 .message button:hover {
     background-color: #d07b8c;
