@@ -1,3 +1,8 @@
+function getGravatarUrl(email, size = 100) {
+  const hashedEmail = CryptoJS.SHA256(email.trim().toLowerCase()).toString(CryptoJS.enc.Hex);
+  return `https://www.gravatar.com/avatar/${hashedEmail}?s=${size}`;
+}
+
 function getMessage(m) {  
   const e = document.createElement("div");  
   e.setAttribute("class", "message");  
@@ -13,7 +18,8 @@ function getMessage(m) {
   e.innerHTML = `  
 
   
-    <hr>  
+    <hr>
+    <img src="${getGravatarUrl(m.username)}" alt="${m.username}'s Avatar" class="avatar" />  
     FROM:  ${m.username}<br>    
     WHEN:  ${formattedDate} ${formattedTime}<br> <!-- Show date and time -->
     TEXT:  ${m.text}<br>  
@@ -31,7 +37,8 @@ function getMessage(m) {
        await sendLike(m._id);  
        window.location.href = 'messages.html'; // Refresh page  
     }  
-  });  
+  }); 
+  
    
   const like = m.likes.find(like => like.username === localStorage.username);  
   b.innerText = like !== undefined ? "UnLike" : "Like";  
