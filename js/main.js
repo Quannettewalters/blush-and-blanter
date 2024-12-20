@@ -124,3 +124,39 @@ async function deleteMessage(postId){
     const object = await response.json();
     return object;
 }
+
+// Get the logout button  
+const logoutButton = document.querySelector('.btn.btn-danger');  
+  
+// Add an event listener to the logout button  
+logoutButton.addEventListener('click', async (e) => {  
+  e.preventDefault(); // Prevent the default link behavior  
+  
+  try {  
+   const response = await fetch(BASE_URL + '/auth/logout', {  
+    method: 'GET',  
+    headers: {  
+      'Authorization': `Bearer ${localStorage.token}`,  
+    },  
+   });  
+  
+   if (response.status === 200 || response.status === 204) {  
+    // Remove the token from local storage  
+    localStorage.removeItem('token');  
+    localStorage.removeItem('username');  
+  
+    // Display a success message  
+    alert('You have been successfully logged out.');  
+  
+    // Delay for 2 seconds before redirecting to the home page  
+    setTimeout(() => {  
+      window.location.href = 'index.html';  
+    }, 2000);  
+   } else {  
+    console.error('Error logging out:', response.status);  
+   }  
+  } catch (error) {  
+   console.error('Error logging out:', error);  
+  }  
+});
+
